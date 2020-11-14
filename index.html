@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    
+    <script type="text" src= "script.js"></script>
+   <style>
+   #formulario{
+     
+    margin-left:10%;
+    margin-top:5%;
+    width:100px;
+   }
+    
+   table tr td{
+     
+     width: 120px;
+     
+   }
+     
+   </style>
+   
+  <body>
+    
+  <script src="script.js"></script>
+  <div id="formulario">
+  <form>
+  <label>Nome</label>
+  <input type="text" name="txtNome"/><br><br>
+  <label>Email</label>
+  <input type="text" name="txtEmail"/><br><br>
+  <label>Telefone</label>
+  <input type="text" name="txtTelefone" /><br><br>
+  <button type="button" value="gravar" onclick="gravaPessoa(txtNome.value, txtEmail.value, txtTelefone.value)">Gravar</button><br><br><br>
+  </form>
+  </div>
+
+<div id="dtPessoas">
+<table id="tbPessos">
+  <thead>
+    
+    <tr>
+      
+      <td>ID</td>
+      <td>Nome</td>
+      <td>Email</td>
+      <td>Telefone</td>
+      
+    </tr>
+    
+  <thead>
+
+</table>
+</div>
+  </body>
+</html>
