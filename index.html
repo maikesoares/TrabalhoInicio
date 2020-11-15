@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
     
-    <script type="text" src= "script.js"></script>
+    <script type="text/javascript" src= "script.js"></script>
    <style>
    #formulario{
      
@@ -33,12 +33,13 @@
   <input type="text" name="txtEmail"/><br><br>
   <label>Telefone</label>
   <input type="text" name="txtTelefone" /><br><br>
-  <button type="button" value="gravar" onclick="gravaPessoa(txtNome.value, txtEmail.value, txtTelefone.value)">Gravar</button><br><br><br>
+  <input type="button" value="Gravar" onclick="gravaPessoa(txtNome.value, txtEmail.value, txtTelefone.value)"/><p>
+  <input type="button" value="Excluir" onclick="excluiDados()"/>
   </form>
   </div>
 
 <div id="dtPessoas">
-<table id="tbPessos">
+<table id="tbPessoas">
   <thead>
     
     <tr>
