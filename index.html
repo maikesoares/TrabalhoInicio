@@ -9,21 +9,27 @@
    <style>
    #formulario{
      
-    margin-left:10%;
-    margin-top:5%;
+    margin-left:5%;
+    margin-top:10%;
     width:100px;
+    position: relative;
    }
     
    table tr td{
      
-     width: 120px;
+     width: 150px;
      
+   }
+   
+   body {
+     
+background-color:#F8F8FF;
    }
      
    </style>
    
   <body>
-    
+   <h1>Preencha os campos abaixo :</h1>
   <script src="script.js"></script>
   <div id="formulario">
   <form>
@@ -35,19 +41,19 @@
   <input type="text" name="txtTelefone" /><br><br>
   <input type="button" value="Gravar" onclick="gravaPessoa(txtNome.value, txtEmail.value, txtTelefone.value)"/><p>
   <input type="button" value="Excluir" onclick="excluiDados()"/>
-  </form>
+  </form><br>
   </div>
 
 <div id="dtPessoas">
-<table id="tbPessoas">
+<table border =1px id="tbPessoas" >
   <thead>
     
     <tr>
       
-      <td>ID</td>
-      <td>Nome</td>
-      <td>Email</td>
-      <td>Telefone</td>
+      <td><b>ID</b></td>
+      <td><b>Nome</b></td>
+      <td><b>Email</b></td>
+      <td><b>Telefone</b></td>
       
     </tr>
     
